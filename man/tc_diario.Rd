@@ -2,7 +2,8 @@
 % Please edit documentation in R/tc_diario.R
 \name{tc_diario}
 \alias{tc_diario}
-\title{Recupera el tipo de cambio del día solicitado. Parametros: (fecha)}
+\title{Recupera el tipo de cambio del día solicitado. Parametros: (fecha)
+ Tipo de cambio diario}
 \usage{
 tc_diario(fecha)
 }

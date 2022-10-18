@@ -2,7 +2,7 @@
 % Please edit documentation in R/tc_mensual.R
 \name{tc_mensual}
 \alias{tc_mensual}
-\title{Recupera el detalle completo de la base de tipos de cambio para el mes solicitado. Parametros: (Año, Mes)}
+\title{Recupera el detalle completo de la base de tipos de cambio para el mes solicitado. Parámetros: (Anio, Mes)}
 \usage{
 tc_mensual(Anio, Mes)
 }
@@ -12,11 +12,15 @@ tc_mensual(Anio, Mes)
 \item{Mes}{numeric (1-12)}
 }
 \value{
-dataframe detalle completo de lostipos de cambio para el mes solicitado.
+dataframe detalle completo de los tipos de cambio para el mes solicitado.
 }
 \description{
-Recupera el detalle completo de la base de tipos de cambio para el mes solicitado. Parametros: (Año, Mes)
+Recupera el detalle completo de la base de tipos de cambio para el mes solicitado. Parámetros: (Anio, Mes)
+}
+\details{
+Tipo de cambio del mes solicitado
 }
 \examples{
  tc_mensual(Anio=2019,Mes=9)
+
 }
