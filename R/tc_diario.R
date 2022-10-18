@@ -1,5 +1,4 @@
 #' Recupera el tipo de cambio del día solicitado. Parametros: (fecha)
-
 #'  Tipo de cambio diario
 #'
 #' @description Recupera el tipo de cambio del día solicitado. Parametros: (fecha)
