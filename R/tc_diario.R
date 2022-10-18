@@ -81,7 +81,7 @@ tc_diario <- function(fecha) {
 
             } else {
 
-                message(paste0("Error indefinido: ", e))
+                message(paste0("Error indefinido: "))
 
                 return(NA)
             }

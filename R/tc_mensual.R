@@ -88,7 +88,7 @@ tc_mensual <- function(Anio, Mes) {
 
             } else {
 
-                message(paste0("Error indefinido: ", e))
+                message(paste0("Error indefinido"))
 
                 return(NA)
             }
