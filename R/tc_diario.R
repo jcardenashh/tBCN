@@ -1,4 +1,5 @@
 #' Recupera el tipo de cambio del día solicitado. Parametros: (fecha)
+
 #'  Tipo de cambio diario
 #'
 #' @description Recupera el tipo de cambio del día solicitado. Parametros: (fecha)
@@ -14,8 +15,27 @@
 #' @importFrom curl has_internet
 
 
+tc_diario = function(fecha)
+{
+    #Recupera el tipo de cambio mediante
+    #la función interna tc y poder vectorizar la función
+    tryCatch(
+        {
+            return(unlist(sapply(fecha,tc)))
+        },
+        error = function(e)
+        {
+            message(paste0("Por favor verifique el parametro fecha:return(NA)"))
 
-tc_diario <- function(fecha) {
+        }
+
+    )
+}
+
+
+tc <- function(fecha) {
+    #Recupera el tipo de cambio se utiliza como función
+    #interna y poder vectorizar la función
 
     # comprobamos que el parámetro fecha este indicado
     if(missing(fecha)){
@@ -74,14 +94,12 @@ tc_diario <- function(fecha) {
 
             if(!has_internet()){
 
-                message(paste0("Por favor verifique su conexion a internet"))
-
+                message(paste0("Por favor verifique su conexion a internet: return(NA)"))
                 return(NA)
 
             } else {
 
-                message(paste0("Error indefinido: "))
-
+                message(paste0("Error indefinido: return(NA)"))
                 return(NA)
             }
 

@@ -1,6 +1,5 @@
-
 #' Recupera el detalle completo de la base de tipos de cambio para el mes solicitado. Parámetros: (Anio, Mes)
-#'
+
 #' Tipo de cambio del mes solicitado
 #'
 #' @description Recupera el detalle completo de la base de tipos de cambio para el mes solicitado. Parámetros: (Anio, Mes)
@@ -82,17 +81,16 @@ tc_mensual <- function(Anio, Mes) {
 
             if(!has_internet()){
 
-                message(paste0("Por favor verifique su conexion a internet"))
+                message(paste0("Por favor verifique su conexion a internet: return(NA)"))
 
                 return(NA)
 
             } else {
 
-                message(paste0("Error indefinido"))
+                message(paste0("Error indefinido: return(NA)"))
 
                 return(NA)
             }
-
 
     }
 

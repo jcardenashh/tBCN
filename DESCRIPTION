@@ -1,6 +1,6 @@
 Package: tBCN
 Title: Tipo de cambio córdoba por dólar.
-Version: 1.0.2
+Version: 1.0.5
 Author: person(Johnys Cárdenas, , "", role = c("aut", "cre")
 Description: Paquete para consultar los tipos de cambio córdoba a dolar Nicaragua. 
         El Banco Central de Nicaragua provee acceso a la información del tipo de 
@@ -16,5 +16,6 @@ Imports:
     XML,
     curl,
     dplyr
-    
-    
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
